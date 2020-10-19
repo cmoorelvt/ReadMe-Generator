@@ -19,37 +19,37 @@ function promptUser() {
     {
         type: "input",
         name: "table",
-        message: "What is your favorite hobby?"
+        message: "Table of Contents"
     },
     {
         type: "input",
         name: "install",
-        message: "What is your favorite food?"
+        message: "How can someone run your project?"
     },
     {
         type: "input",
         name: "usage",
-        message: "Enter your GitHub Username"
+        message: "How can it be used?"
     },
     {
         type: "input",
         name: "license",
-        message: "Enter your LinkedIn URL."
+        message: "Licensing"
     },
     {
         type: "input",
         name: "contribute",
-        message: "Enter your LinkedIn URL."
+        message: ".."
     },
     {
         type: "input",
         name: "tests",
-        message: "Enter your LinkedIn URL."
+        message: "..."
     },
     {
         type: "input",
         name: "questions",
-        message: "Enter your LinkedIn URL."
+        message: "...."
     },
   ]);
 }
