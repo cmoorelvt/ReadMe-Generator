@@ -9,87 +9,91 @@ function promptUser() {
     {
         type: "input",
         name: "title",
-        message: "What is the title of your project?"
+        message: "What is the title of your project?",
     },
     {
         type: "input",
         name: "bio",
-        message: "Please give a description of your project."
-    },
-    {
-        type: "input",
-        name: "table",
-        message: "Table of Contents"
+        message: "Please give a description of your project.",
     },
     {
         type: "input",
         name: "install",
-        message: "How can someone run your project?"
+        message: "How can someone run your project?",
     },
     {
         type: "input",
         name: "usage",
-        message: "How can it be used?"
+        message: "How can it be used?",
     },
-    {
+     {
         type: "input",
         name: "license",
-        message: "Licensing",
-        choices: ["MIT", "GPLv3", "Apache", "other"]
+        message: "What licensing was used?",
     },
     {
         type: "input",
         name: "contribute",
-        message: "Are there any contributors?"
+        message: "Are there any contributors?",
+    }, 
+    {
+        type: "input",
+        name: "gitname",
+        message: "Please enter your GitHub username.",
+    },
+    {
+        type: "input",
+        name: "repo",
+        message: "Please enter the name of your repo",
     },
     {
         type: "input",
         name: "tests",
-        message: "Is there a how to for testing?"
+        message: "Is there a how to for testing?",
     },
     {
         type: "input",
         name: "questions",
-        message: "Please feel free to contact me."
+        message: "Please feel free to contact me.",
     },
-  ]);
-}
+  ]) 
+};
 
-function generateHTML(answers) {
-  return `
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <title>Document</title>
-</head>
-<body>
-  <div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4">Hi! My name is ${answers.name}</h1>
-    <p class="lead">I am from ${answers.location}.</p>
-    <h3>Example heading <span class="badge badge-secondary">Contact Me</span></h3>
-    <ul class="list-group">
-      <li class="list-group-item">My GitHub username is ${answers.github}</li>
-      <li class="list-group-item">LinkedIn: ${answers.linkedin}</li>
-    </ul>
-  </div>
-</div>
-</body>
-</html>`;
-}
+function generateReadme(answers) {
+  return `# ${answers.title}
+  ![GitHub](https://img.shields.io/github/license/${answers.gitname}/${answers.repo}?color=39%2C%20255%2C%200%20&style=for-the-badge)
+  ## Description
+  ${answers.bio}
+  <hr>
+  ## Table of Contents 
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [License](#license)
+  * [Contributions](#contributions)
+  * [Testing](#testing)
+  * [Questions](#questions)
+  <hr>
+  ## Installation
+  ${answers.install}
+  ## Usage
+  ${answers.usage}
+  ## License
+  Created under the ${answers.license} license. See LICENSE.txt for more information.
+  ## Contributions
+  ${answers.contribute}
+  ## Testing
+  ${answers.tests}
+  ## Questions
+  If you have any questions, please feel free to reach out. <br>  
+  `
+  }
 
-promptUser()
-  .then(function(answers) {
-    const html = generateHTML(answers);
-
-    return writeFileAsync("index.html", html);
-  })
-  .then(function() {
-    console.log("Successfully wrote to index.html");
-  })
-  .catch(function(err) {
+  promptUser().then(function(answers){
+    const readme=generateReadme(answers);
+    
+    return writeFileAsync("README.md", readme);
+}).then(function(){
+    console.log("Successfully created README");
+}).catch(function(err){
     console.log(err);
-  });
+});
