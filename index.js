@@ -34,22 +34,23 @@ function promptUser() {
     {
         type: "input",
         name: "license",
-        message: "Licensing"
+        message: "Licensing",
+        choices: ["MIT", "GPLv3", "Apache", "other"]
     },
     {
         type: "input",
         name: "contribute",
-        message: ".."
+        message: "Are there any contributors?"
     },
     {
         type: "input",
         name: "tests",
-        message: "..."
+        message: "Is there a how to for testing?"
     },
     {
         type: "input",
         name: "questions",
-        message: "...."
+        message: "Please feel free to contact me."
     },
   ]);
 }
