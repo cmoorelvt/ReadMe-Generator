@@ -50,7 +50,7 @@ function generateReadme(answers) {
   ## Description
   ${answers.bio}
   <hr>
-  ## Table of Contents
+  ## Table of Contents <br>
   [Install](#install)\n
   [Usage](#usage)\n
   [License](#license)\n
