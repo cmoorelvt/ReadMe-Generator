@@ -1,10 +1,11 @@
-# dfgdfg
-  ![GitHub](https://img.shields.io/github/license/undefined/undefined?color=39%2C%20255%2C%200%20&style=for-the-badge)
+# Good README Generator
+
   ## Description
-  dfgdfg
+  A command-line application that allows for quick and easy generation of a project README which 
+will allow a project creator to spend more time working on the project itself.
   <hr>
   ## Table of Contents
-  
+
   [Installation](#install)
 
   [Usage](#usage)
@@ -19,15 +20,15 @@
   <hr>
 
   ## Installation
-  dfgdfg
+  Clone this repo and in the terminal, type "node index" to execute. You will need Node.JS and npm to perform.
   ## Usage
-  dfgdfg
+  To quickly create a professional README for a new project.
   ## License
-  Created under the dfgdfg license.
+  Created under the MIT license.
   ## Contributions
-  fdgdfg
+  No additionals contributors at this time.
   ## Testing
-  dfgdfg
+  No additional testing has been performed.
   ## Questions
   If you have any questions, please feel free to reach out. <br>  
   
