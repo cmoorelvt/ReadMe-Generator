@@ -46,12 +46,12 @@ function promptUser() {
 
 function generateReadme(answers) {
   return `# ${answers.title}
-  ![GitHub](https://img.shields.io/github/license/${answers.gitname}/${answers.repo}?color=39%2C%20255%2C%200%20&style=for-the-badge)
+  [![License](https://img.shields.io/badge/license-${response.license}-orange)](https://opensource.org/licenses)
   ## Description
   ${answers.bio}
   <hr>
   ## Table of Contents
-  [Installation](#install)\n
+  [Install](#install)\n
   [Usage](#usage)\n
   [License](#license)\n
   [Contribution](#contribute)\n
