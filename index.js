@@ -46,7 +46,6 @@ function promptUser() {
 
 function generateReadme(answers) {
   return `# ${answers.title}
-  [![License](https://img.shields.io/badge/license-${response.license}-orange)](https://opensource.org/licenses)
   ## Description
   ${answers.bio}
   <hr>
