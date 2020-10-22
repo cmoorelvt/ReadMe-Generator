@@ -66,11 +66,11 @@ function generateReadme(answers) {
   ${answers.bio}
   <hr>
   ## Table of Contents 
-  * [Installation](#installation)
+  * [Installation](#install)
   * [Usage](#usage)
   * [License](#license)
-  * [Contributions](#contributions)
-  * [Testing](#testing)
+  * [Contributions](#contribute)
+  * [Testing](#tests)
   * [Questions](#questions)
   <hr>
   ## Installation
