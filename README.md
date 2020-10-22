@@ -12,15 +12,15 @@
   * [Questions](#questions)
   <hr>
   ## Installation
-  Download from my GitHub repository. This will require node.js to run.
+  Clone this GitHub repo and run in your terminal. You will need Node.JS to run.
   ## Usage
-  GIVEN a command-line application that accepts user input
+  To quickly create a professional README for a new project
   ## License
-  Created under the WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions license. See LICENSE.txt for more information.
+  Created under the MIT license. See LICENSE.txt for more information.
   ## Contributions
-  None
+  None at this time.
   ## Testing
-  No
+  None at this time.
   ## Questions
   If you have any questions, please feel free to reach out. <br>  
   
