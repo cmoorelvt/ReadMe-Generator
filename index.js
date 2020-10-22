@@ -38,23 +38,8 @@ function promptUser() {
     }, 
     {
         type: "input",
-        name: "gitname",
-        message: "Please enter your GitHub username.",
-    },
-    {
-        type: "input",
-        name: "repo",
-        message: "Please enter the name of your repo",
-    },
-    {
-        type: "input",
         name: "tests",
         message: "Is there a how to for testing?",
-    },
-    {
-        type: "input",
-        name: "questions",
-        message: "Please feel free to contact me.",
     },
   ]) 
 };
@@ -65,20 +50,20 @@ function generateReadme(answers) {
   ## Description
   ${answers.bio}
   <hr>
-  ## Table of Contents 
-  * [Installation](#install)
-  * [Usage](#usage)
-  * [License](#license)
-  * [Contributions](#contribute)
-  * [Testing](#tests)
-  * [Questions](#questions)
+  ## Table of Contents
+  [Installation](#install)\n
+  [Usage](#usage)\n
+  [License](#license)\n
+  [Contribution](#contribute)\n
+  [Tests](#tests)\n
+  [Questions](#questions)
   <hr>
   ## Installation
   ${answers.install}
   ## Usage
   ${answers.usage}
   ## License
-  Created under the ${answers.license} license. See LICENSE.txt for more information.
+  Created under the ${answers.license} license.
   ## Contributions
   ${answers.contribute}
   ## Testing
