@@ -4,6 +4,7 @@
   A command-line application that allows for quick and easy generation of a project README which 
 will allow a project creator to spend more time working on the project itself.
   <hr>
+  
   ## Table of Contents
 
   [Installation](#install)
